@@ -3,9 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RallyTrack Support</title>
-    <meta name="description" content="Get help with RallyTrack, the pickleball score tracking app." />
+    <title>Support — RallyTrack</title>
+    <meta name="description" content="RallyTrack support and FAQ" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="app-icon.png" />
+    <style>
+      .content {
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 24px;
+        padding: 48px;
+        max-width: 800px;
+        margin: 40px auto;
+        backdrop-filter: blur(20px);
+      }
+      
+      .content h1 {
+        font-size: 36px;
+        margin-bottom: 32px;
+      }
+      
+      .faq-item {
+        margin-bottom: 32px;
+      }
+      
+      .content h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: #00D563;
+      }
+      
+      .content p {
+        color: rgba(255,255,255,0.7);
+        margin-bottom: 16px;
+        line-height: 1.6;
+      }
+      
+      .content ul {
+        color: rgba(255,255,255,0.7);
+        margin-left: 24px;
+        margin-bottom: 16px;
+      }
+      
+      .content li {
+        margin-bottom: 8px;
+      }
+      
+      .contact-card {
+        background: rgba(0,213,99,0.1);
+        border: 1px solid rgba(0,213,99,0.2);
+        border-radius: 16px;
+        padding: 24px;
+        margin-top: 40px;
+        text-align: center;
+      }
+      
+      .contact-card h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: #00D563;
+      }
+      
+      .contact-card a {
+        color: #00D563;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      @media (max-width: 768px) {
+        .content {
+          padding: 32px 24px;
+        }
+        
+        .content h1 {
+          font-size: 28px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -18,108 +93,98 @@
       </nav>
 
       <div class="content">
-        <h1>Support</h1>
-        <p>Need help? We're here for you!</p>
+        <h1>Support & FAQ</h1>
 
-        <div class="hero-card">
-          <h2>📧 Contact Us</h2>
+        <div class="faq-item">
+          <h2>How do I start a new match?</h2>
           <p>
-            <strong>Email:</strong> <a href="mailto:support@rallytrack.app">support@rallytrack.app</a><br />
-            <strong>Response time:</strong> Within 24-48 hours
+            Tap the "Start New Match" button on the home screen. You can customize the game settings
+            (first to 11, 15, or 21) and choose whether to track servers.
           </p>
         </div>
 
-        <h2>🆘 Common Questions</h2>
+        <div class="faq-item">
+          <h2>How do I undo a score?</h2>
+          <p>
+            Tap the undo button (↩️) at the top of the scoring screen. This will revert the last
+            point scored. You can undo multiple times to go back further.
+          </p>
+        </div>
 
-        <h3>How do I start a new match?</h3>
-        <p>
-          Tap the "+" button on the home screen, enter your opponent's name, select singles or doubles, 
-          and tap "Start Match."
-        </p>
+        <div class="faq-item">
+          <h2>Can I edit match details after it's finished?</h2>
+          <p>
+            Yes! Go to your match history, tap on any completed match, and you can edit player names,
+            dates, or even delete the match entirely.
+          </p>
+        </div>
 
-        <h3>How do I score a point?</h3>
-        <p>
-          Simply tap the large score area for you or your opponent. The score will increment by 1.
-        </p>
+        <div class="faq-item">
+          <h2>Does RallyTrack work offline?</h2>
+          <p>
+            Yes! RallyTrack works completely offline. No internet connection required.
+            All your data is stored locally on your device.
+          </p>
+        </div>
 
-        <h3>I made a scoring mistake. How do I fix it?</h3>
-        <p>
-          Tap the "Undo" button at the bottom left. This will revert the last score change.
-        </p>
+        <div class="faq-item">
+          <h2>How do I switch sides during a match?</h2>
+          <p>
+            When you reach the midpoint of a game (e.g., 6 points in a game to 11), RallyTrack will
+            show a reminder to switch sides. You can dismiss this reminder if you don't want to see it.
+          </p>
+        </div>
 
-        <h3>How do I end a match?</h3>
-        <p>
-          Matches automatically complete when one player reaches 11 points with a 2-point lead. 
-          You can also manually end a match by tapping "End Match."
-        </p>
+        <div class="faq-item">
+          <h2>Can I track doubles matches?</h2>
+          <p>
+            Currently, RallyTrack is optimized for tracking individual scores (you vs opponent).
+            Full doubles support with team tracking is coming in a future update.
+          </p>
+        </div>
 
-        <h3>Where is my match history?</h3>
-        <p>
-          Tap the "History" icon in the bottom navigation bar to view all your past matches.
-        </p>
+        <div class="faq-item">
+          <h2>What about DUPR integration?</h2>
+          <p>
+            DUPR integration is planned for a future update. When available, you'll be able to
+            automatically sync your matches to DUPR for rating calculations.
+          </p>
+        </div>
 
-        <h3>How do I delete a match?</h3>
-        <p>
-          In the Match History screen, swipe left on any match and tap "Delete."
-        </p>
+        <div class="faq-item">
+          <h2>How do I delete my data?</h2>
+          <p>
+            You can clear all data in the Profile tab under Settings. Alternatively,
+            uninstalling the app will remove all local data from your device.
+          </p>
+        </div>
 
-        <h3>Can I sync my data across devices?</h3>
-        <p>
-          Not yet! iCloud sync is coming in a future update. For now, all data stays on your device.
-        </p>
+        <div class="faq-item">
+          <h2>The app isn't working correctly. What should I do?</h2>
+          <p>Try these steps:</p>
+          <ul>
+            <li>Close and reopen the app</li>
+            <li>Restart your device</li>
+            <li>Make sure you're running the latest version of iOS</li>
+            <li>Update RallyTrack to the latest version from the App Store</li>
+          </ul>
+          <p>If the issue persists, contact support below.</p>
+        </div>
 
-        <h3>Does RallyTrack work offline?</h3>
-        <p>
-          Yes! All features work completely offline. No internet connection required.
-        </p>
-
-        <h3>Why can't I find RallyTrack on Android?</h3>
-        <p>
-          RallyTrack is currently iOS-only. Android support may come in the future based on demand.
-        </p>
-
-        <h3>Will RallyTrack integrate with DUPR?</h3>
-        <p>
-          Yes! DUPR integration is planned for a future update. We'll announce it when it's ready.
-        </p>
-
-        <h2>🐛 Found a Bug?</h2>
-        <p>Please email us at <a href="mailto:support@rallytrack.app">support@rallytrack.app</a> with:</p>
-        <ul>
-          <li>Description of the bug</li>
-          <li>Steps to reproduce it</li>
-          <li>Your device model and iOS version</li>
-        </ul>
-        <p>We'll fix it ASAP!</p>
-
-        <h2>💡 Feature Requests</h2>
-        <p>Have an idea for RallyTrack? We'd love to hear it!</p>
-        <p>
-          <strong>Email:</strong> <a href="mailto:support@rallytrack.app">support@rallytrack.app</a><br />
-          <strong>Subject:</strong> "Feature Request"
-        </p>
-
-        <h2>🔗 Links</h2>
-        <ul>
-          <li><a href="index.html">Website</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="https://apps.apple.com/app/rallytrack" target="_blank">Download on App Store</a></li>
-        </ul>
-
-        <h2>📱 Social Media</h2>
-        <ul>
-          <li>Instagram: <a href="https://instagram.com/rallytrack" target="_blank">@rallytrack</a></li>
-          <li>TikTok: <a href="https://tiktok.com/@rallytrack" target="_blank">@rallytrack</a></li>
-          <li>Twitter: <a href="https://twitter.com/rallytrack" target="_blank">@rallytrack</a></li>
-        </ul>
+        <div class="contact-card">
+          <h3>Still need help?</h3>
+          <p>
+            <a href="mailto:support@rallytrack.app">support@rallytrack.app</a>
+          </p>
+        </div>
       </div>
 
       <div class="footer">
         <p>© 2026 RallyTrack</p>
         <p>
-          <a href="index.html">Home</a> · 
+          <a href="index.html">Home</a> ·
           <a href="privacy.html">Privacy</a> · 
-          <a href="mailto:support@rallytrack.app">Contact</a>
+          <a href="support.html">Support</a>
         </p>
       </div>
     </div>
