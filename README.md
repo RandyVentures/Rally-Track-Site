@@ -39,7 +39,7 @@ Use these URLs when submitting to App Store Connect:
 
 ## 📧 Contact
 
-**Support:** support@rallytrack.app
+**Support:** randyventures06@gmail.com
 
 ---
 
