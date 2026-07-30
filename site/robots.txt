@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://randyventures.github.io/Rally-Track-Site/sitemap.xml
