@@ -584,6 +584,37 @@ h2 {
 .contact-card p { color: var(--text-sec); margin-bottom: 14px; }
 .contact-card a { font-size: 16px; font-weight: 600; }
 
+/* ─── Policy pages (privacy) ─────────────────────────── */
+/* Same green-tinted treatment as .contact-card for the top-of-page
+   TL;DR, but left-aligned body copy instead of a centered CTA block. */
+.summary-card {
+  background: linear-gradient(140deg, rgba(0,213,99,.10), rgba(255,255,255,.03));
+  border: 1px solid var(--green-line);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  margin-bottom: 8px;
+}
+.summary-card p { color: var(--text-sec); margin: 0; }
+.summary-card p:last-child { margin: 0; }
+.summary-card strong { color: var(--text); }
+
+/* A tag like .eyebrow, sized to sit inline atop a .faq-item instead of a
+   hero section — flags the one policy section that changed most recently. */
+.faq-item h2 { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.faq-item .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--green-soft);
+  border: 1px solid var(--green-line);
+  color: var(--green);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  padding: 4px 11px;
+  border-radius: 999px;
+}
+
 /* ─── Footer ──────────────────────────────────────────── */
 .footer {
   border-top: 1px solid var(--border);
